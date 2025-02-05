@@ -1,9 +1,9 @@
 {
   "name": "commitmoji",
-  "displayName": "Commitmoji",
-  "description": "An extension to make your commits easier, with emojis and predefined conventions.",
+  "displayName": "CommitMoji",
+  "description": "Make your commits easier, with emojis and predefined conventions.",
   "icon": "img/logo.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "lucas-scandido",
   "author": {
     "name": "Lucas Candido",
@@ -33,7 +33,11 @@
     "commands": [
       {
         "command": "commitmoji.showEmojis",
-        "title": "📝"
+        "title": "CommitMoji",
+        "icon": {
+          "dark": "img/icon.png",
+          "light": "img/black_icon.png"
+        }
       }
     ],
     "menus": {
