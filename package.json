@@ -1,0 +1,68 @@
+{
+  "name": "commitmoji",
+  "displayName": "Commitmoji",
+  "description": "An extension to make your commits easier, with emojis and predefined conventions.",
+  "icon": "img/logo.png",
+  "version": "0.0.1",
+  "publisher": "lucas-scandido",
+  "author": {
+    "name": "Lucas Candido",
+    "email": "lucas.candidoqa@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/lucas-scandido/commitmoji",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucas-scandido/commitmoji.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "commit",
+    "emoji",
+    "convention",
+    "git"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commitmoji.showEmojis",
+        "title": "📝"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "commitmoji.showEmojis",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
