@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "commitmoji" extension will be documented in this file.
+## [0.0.2] - 2025-02-05
+### Added
+- New icon and logo for the extension.
+- Automatic replacement of commit messages when selecting emojis and conventions.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [0.0.1] - 2025-02-04
+### Initial Release
+- Initial version of the "CommitMoji" extension.
