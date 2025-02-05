@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('commitmoji.showEmojis', async () => {
 		const emojis = [
-			{ label: '🎉', description: 'Inicial setup' },
+			{ label: '🎉 [setup]:', description: 'Inicial commit' },
 			{ label: '🏗️ [build]: ', description: 'Build system or dependency changes' },
 			{ label: '🔧 [chore]: ', description: 'Other changes (e.g., build scripts, config files)' },
 			{ label: '👷‍♂️ [ci]: ', description: 'CI/CD changes' },
@@ -27,6 +27,11 @@ export function activate(context: vscode.ExtensionContext) {
 			await vscode.commands.executeCommand('workbench.scm.focus');
 
 			await new Promise(resolve => setTimeout(resolve, 100));
+
+			if (selectedEmoji) {
+				await vscode.commands.executeCommand('editor.action.selectAll');
+				await vscode.commands.executeCommand('editor.action.deleteLines');
+			}
 
 			await vscode.commands.executeCommand('editor.action.clipboardPasteAction');
 
