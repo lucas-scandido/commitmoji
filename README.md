@@ -1,8 +1,10 @@
-# 🚀 CommitMoji - Emojis and Predefined Conventions
+# CommitMoji - Emojis and Predefined Conventions
 
-An extension to make your commits easier, with emojis and predefined conventions. Ideal for maintaining a more visually organized and informative commit history.
+Make your commits easier, with emojis and predefined conventions. Ideal for maintaining a more visually organized and informative commit history.
 
-## ✨ Features
+![Usage example](./img/usage_example.gif)
+
+## 🚀 Features
 - Quick selection of emojis with descriptions for commit conventions.
 - Direct integration with the commit field in VSCode.
 
