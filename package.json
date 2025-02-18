@@ -3,7 +3,7 @@
   "displayName": "CommitMoji",
   "description": "Make your commits easier, with emojis and predefined conventions.",
   "icon": "img/logo.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "lucas-scandido",
   "author": {
     "name": "Lucas Candido",
