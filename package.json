@@ -38,6 +38,11 @@
           "dark": "img/icon.png",
           "light": "img/black_icon.png"
         }
+      },
+      {
+        "command": "commitmoji.switchEmojiPreference",
+        "title": "Switch Emoji Preference",
+        "key": "ctrl+alt+e"
       }
     ],
     "menus": {
