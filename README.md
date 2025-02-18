@@ -5,13 +5,14 @@ Make your commits easier, with emojis and predefined conventions. Ideal for main
 ![Usage example](./img/usage_example.gif)
 
 ## 🚀 Features
-- Quick selection of emojis with descriptions for commit conventions.
+- You can choose between using conventions with or without emoji.
+- Quick selection of predefined conventions.
 - Direct integration with the commit field in VSCode.
 
 ## 📋 Available Emojis
 | Emoji | Convention              | Description                          |
 |-------|-------------------------|-------------------------------------|
-| 🎉    | `Inicial setup`         | Initial project setup                                  |
+| 🎉    | `setup`                 | Initial commit                                         |
 | 🏗️    | `build`                 | Build system or dependency changes                     |
 | 🔧    | `chore`                 | Other changes (e.g., build scripts, config files)      |
 | 👷‍♂️    | `ci`                    | CI/CD changes                                          |
